@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin-top: 5rem;
+        }
+
+        #div-container{
+            width: 400px;
+            height: 500px;
+            margin: 180px auto;
+            padding: 2rem;
+            border: solid 1px #000000;
+            border-radius: 10%;
+            background-color: #71a277;
+        }
+
+        #form-container{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+
+        }
+
+        #input{
+            margin-top: 2.5rem;
+            background-color: #abaaaa;
+        }
+
+        label{
+            margin-top: 1rem;
+        }
+
+        input{
+            
+            padding: 0.5rem;
+            border: solid 1px #000000;
+            border-radius: 5px;
+        }
+
+        textarea{
+            padding: 0.5rem;
+            border: solid 1px #000000;
+            border-radius: 5px;
+            height: 100px;
+        }
+
+    </style>
 </head>
 <body>
     <nav id="navbar" class="nav">
@@ -20,11 +66,27 @@
             <button data-language="en">EN</button>
         </div>
     </nav>
-    <section id="option-section">
-        <div id="triple">
-            <div id="div-flex">Documento Legal</div>
-            <div id="div-flex">Documento Academico</div>
-            <div id="div-flex">Otro</div>
+    
+    <section id="form-section">
+        <div id="div-container">
+            <form id="form-container" action="https://formsubmit.co/debrahtraduc@gmail.com" method="POST">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="name">
+
+                <label for="telefono">Telefono</label>
+                <input type="text" name="phone">
+
+                <label for="email">Email</label>
+                <input type="text" name="email">
+
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" cols="15" rows="5"></textarea>
+
+                <input type="submit" value="Enviar" id="input">
+
+                <input type="hidden" name="_next" value="https://spanishoringlish.com">
+
+            </form>
         </div>
     </section>
 
