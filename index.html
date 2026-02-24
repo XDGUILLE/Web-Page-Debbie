@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Web</title>
+    <title>Spanish or Inglish</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,38 +11,32 @@
 <body>
     <nav id="navbar" class="nav">
         <ul class="nav-list">
-            <li><a href="#welcome-section">Acerca</a></li>
-            <li><a href="#projects">Servicios</a></li>
-            <li><a href="#contact">Contactos</a></li>
+            <li><a href="#welcome-section" data-section="nav-list" data-value="welcome-section">Acerca</a></li>
+            <li><a href="#projects" data-section="nav-list" data-value="projects">Servicios</a></li>
+            <li><a href="#contact" data-section="nav-list" data-value="contact">Contactos</a></li>
         </ul>
+        <div id="language-buttons" class="language-buttons">
+            <button data-language="es">ES</button>
+            <button data-language="en">EN</button>
+        </div>
     </nav>
     <section id="welcome-section" class="welcome-section">
-        <h1>Hola, soy Debra Hernandez</h1>
-        <p>Traductora Jurada y Maestra de ingles y español</p>
+        <h1 data-section="welcome-section" data-value="title">Hola, soy Debra Hernandez</h1>
+        <p data-section="welcome-section" data-value="subtitle">Traductora Jurada, Maestra de ingles y español</p>
     </section>
     <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">
+        <h2 class="projects-section-header" data-section="projects" data-value="title">
             ¿Que estas Buscando?
         </h2>
         <div class= "projects-grid">
-            <a href= "#" target= "_blank" class="project">
+            <a href= "jurada.html" target= "_blank" class="project">
                 <img
                 class="project-image"
                 src="jurada.png"
                 alt="Proyecto Calculadora"
                 />
-                <p class="project-title">
-                    Traduccion Jurada 
-                </p>
-            </a>
-            <a href= "#" target= "_blank" class="project">
-                <img
-                class="project-image"
-                src="normal.png"
-                alt="Proyecto pagina de un banco"
-                />
-                <p class="project-title">
-                    Traduccion Normal
+                <p class="project-title" data-section="project-title" data-value="jurada">
+                    Traducción Jurada 
                 </p>
             </a>
             <a href= "#" target= "_blank" class="project">
@@ -51,8 +45,18 @@
                 src="ingles.png"
                 alt="Proyecto conexion con un Servidor"
                 />
-                <p class="project-title">
+                <p class="project-title" data-section="project-title" data-value="ingles">
                     Clases de Ingles
+                </p>
+            </a>
+            <a href= "#" target= "_blank" class="project">
+                <img
+                class="project-image"
+                src="normal.png"
+                alt="Proyecto pagina de un banco"
+                />
+                <p class="project-title" data-section="project-title" data-value="normal">
+                    Traducción Normal
                 </p>
             </a>
             <a href= "#" target= "_blank" class="project">
@@ -61,7 +65,7 @@
                 src="espanol.png"
                 alt="Proyecto adivina el numero"
                 />
-                <p class="project-title">
+                <p class="project-title" data-section="project-title" data-value="espanol">
                     Clases de Español
                 </p>
             </a>
@@ -69,34 +73,27 @@
     </section>
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
-            <h2>Trabajemos juntos...</h2>
-            <p>Como tomas tu cafe?</p>
+            <h2 data-section="contact" data-value="title">Trabajemos juntos...</h2>
+            <p data-section="contact" data-value="subtitle">Como tomas tu cafe?</p>
         </div>
         <div class="contact-links">
             <a href="#" target="_blank" class="contact-details">
                 <i class="fa-brands fa-facebook-f"></i>
                 FaceBook
             </a>
-            <a href="#" target="_blank" class="contact-details">
-                <i class="fa-brands fa-github"></i>
-                Github
-            </a>
-            <a href="#" target="_blank" class="contact-details">
-                <i class="fa-brands fa-twitter">‌</i>
-                Twitter
-            </a>
-            <a href="#" target="_blank" class="contact-details">
+            <a href="#" target="_blank" class="contact-details" data-section="contact-links" data-value="email">
                 <i class="fas fa-at"></i>
                 Enviar Correo
             </a>
-            <a href="#" target="_blank" class="contact-details">
+            <a href="#" target="_blank" class="contact-details" data-section="contact-links" data-value="phone">
                 <i class="fa-solid fa-phone"></i>
                 Llamar 
             </a>
         </div>
     </section>
     <footer>
-        <p><i class="fa-solid fa-copyright"></i> Todos los derechos reservados <a href="#"> Guillermo Ventura</a></p>
+        <p data-section="footer" data-value="copyright"><i class="fa-solid fa-copyright"></i> Todos los derechos reservados <a href="#"> Guillermo Ventura.</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

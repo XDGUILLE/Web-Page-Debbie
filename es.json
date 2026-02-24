@@ -1,0 +1,31 @@
+{
+    "nav-list": {
+        "welcome-section" : "Acerca",
+        "projects": "Servicios",
+        "contact": "Contactos"
+    },
+    "welcome-section": {
+        "title": "Hola, soy Debra Hernandez",
+        "subtitle": "Traductora Jurada, Maestra de ingles y español"
+    },
+    "projects": {
+        "title": "¿Que estas Buscando?"
+    },
+    "project-title": {
+        "jurada": "Traducción Jurada",
+        "ingles": "Clases de Ingles",
+        "normal": "Traducción Normal",
+        "espanol": "Clases de Español"
+    },
+    "contact": {
+        "title": "Trabajemos juntos...",
+        "subtitle": "Como tomas tu cafe?"
+    },
+    "contact-links": {
+        "email": "Correo",
+        "phone": "Llamar"
+    },
+    "footer": {
+        "copyright": "© Todos los derechos reservados Guillermo Ventura"
+    }
+}

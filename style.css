@@ -5,9 +5,11 @@
 }   
 
 :root {
-    --primary-bg: #0f172a;
-    --secondary-bg: #1e293b;
-    --accent-bg: #334155;
+    --h1-color: #761895;
+    --primary-bg: #1b0f2af2;
+    --primary-bg2: #5a397f;
+    --secondary-bg: #0c4019;
+    --accent-bg: #f8f8f8;
     --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
@@ -15,7 +17,7 @@
     --accent-hover: #4f46e5;
     --success-color: #10b981;
     --border-color: #334155;
-    --card-bg: #1e293b;
+    --card-bg: #1c331c;
 }
 
 body {
@@ -29,7 +31,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(15,23,42,0.95);
+    background-color: #1b0f2af2;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
@@ -60,13 +62,58 @@ body {
     background-color: var(--secondary-bg);
 }
 
+.language-buttons {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+.language-buttons button {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid transparent;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.language-buttons button:hover {
+    background: rgba(255,255,255,0.04);
+    color: var(--text-primary);
+    border-color: rgba(255,255,255,0.06);
+}
+
+.language-buttons button.active {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 6px 18px rgba(99,102,241,0.18);
+    border-color: var(--accent-hover);
+}
+
+.language-buttons button:focus {
+    outline: 3px solid rgba(79,70,229,0.18);
+    outline-offset: 2px;
+}
+
 .welcome-section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+    background: linear-gradient(135deg, var(--primary-bg2) 0%, var(--secondary-bg) 100%);
     position: relative;
     overflow: hidden;
     justify-content: center;
@@ -87,7 +134,7 @@ body {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
+    background: linear-gradient(135deg, var(--h1-color), #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip:text;

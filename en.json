@@ -1,0 +1,31 @@
+{
+    "nav-list": {
+        "welcome-section" : "About",
+        "projects": "Services",
+        "contact": "Contacts"
+    },
+    "welcome-section": {
+        "title": "Hello, I'm Debra Hernandez",
+        "subtitle": "Juridical Translator, Teacher of English and Spanish"
+    },
+    "projects": {
+        "title": "What are you looking for?"
+    },
+    "project-title": {
+        "jurada": "Juridical Translation",
+        "ingles": "English classes",
+        "normal": "Normal Translation",
+        "espanol": "Spanish Classes"
+    },
+    "contact": {
+        "title": "Let's work together...",
+        "subtitle": "How do you take your coffee??"
+    },
+    "contact-links": {
+        "email": "Email",
+        "phone": "Call"
+    },
+    "footer": {
+        "copyright": "© CopyRight reserved Guillermo Ventura"
+    }
+}
